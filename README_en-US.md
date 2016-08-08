@@ -1,23 +1,23 @@
-# Vue Virtual Keyboard | [English Doc](/README_en-US.md)
-一个基于`Vue.js`的虚拟键盘组件。  
+# Vue Virtual Keyboard | [中文文档](/README.md)
+A virtual keyboard component for `Vue.js`。  
 
 [![Build Status](https://travis-ci.org/CodeDaraW/vue-virtual-keyboard.svg?branch=master)](https://travis-ci.org/CodeDaraW/vue-virtual-keyboard) [![codecov](https://codecov.io/gh/CodeDaraW/vue-virtual-keyboard/branch/master/graph/badge.svg)](https://codecov.io/gh/CodeDaraW/vue-virtual-keyboard)
 
 
 ## Demo
-[在线Demo](http://vue-virtual-keyboard.daraw.cn/)
+[Online Demo](http://vue-virtual-keyboard.daraw.cn/)
 
 ![](https://ooo.0o0.ooo/2016/08/08/57a8975f2d6b0.png
 )
 
 
-## 安装
+## Installation
 
 ```bash
 npm install https://github.com/CodeDaraW/vue-virtual-keyboard.git
 ```
 
-## 使用
+## Usage
 
 ### ES6
 ```Vue
@@ -75,27 +75,27 @@ export default {
 var Keyboard = require('vue-virtual-keyboard/src/components/Keyboard');
 ```
 
-## 构建
+## Build Setup
 
 ``` bash
-# 安装依赖
-npm install
+ # install dependencies
+ npm install
 
-# 在 localhost:8080 启动本地服务器并支持热更新
-npm run dev
+ # serve with hot reload at localhost:8080
+ npm run dev
 
-# 构建
-npm run build
+ # build for production with minification
+ npm run build
 
-# 单元测试
-npm run unit
+ # run unit tests
+ npm run unit
 
-# e2e测试
-npm run e2e
+ # run e2e tests
+ npm run e2e
 
-# 进行所有测试
-npm test
-```
+ # run all tests
+ npm test
+ ```
 
-## 协议
+## License
 [The MIT License](http://opensource.org/licenses/MIT)
