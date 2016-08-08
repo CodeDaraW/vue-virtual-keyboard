@@ -1,27 +1,98 @@
-# vue-virtual-keyboard
+# Vue Virtual Keyboard
+一个基于`Vue.js`的虚拟键盘组件。
 
-> Vue Virtual Keyboard
+## Demo
+[在线Demo]()
 
-## Build Setup
+![](https://ooo.0o0.ooo/2016/08/08/57a8975f2d6b0.png
+)
+
+
+## 安装
+
+```bash
+npm install https://github.com/CodeDaraW/vue-virtual-keyboard.git
+```
+
+## 使用
+
+### ES6
+```Vue
+<style>
+    #app {
+        width: 680px;
+        margin: 20px auto;
+        font-family: Verdana, Sans-Serif;
+
+
+    }
+    h1 {
+        color: #42b983;
+        font-weight: bold;
+
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        min-height: 100px;
+        padding: 0;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+</style>
+<template>
+    <div id="app">
+        <h1>Just Enter Text:</h3>
+        <textarea type="text" v-model="keyboardText"></textarea>
+        <keyboard :keyboard-text.sync="keyboardText"></keyboard>
+    </div>
+</template>
+
+<script>
+import Keyboard from 'vue-virtual-keyboard/src/components/Keyboard'
+
+export default {
+    data() {
+        return {
+            keyboardText: ""
+        }
+    },
+
+    components: {
+        Keyboard
+    }
+}
+</script>
+```
+
+### CommonJS
+
+```JavsScript
+var Keyboard = require('vue-virtual-keyboard/src/components/Keyboard');
+```
+
+## 构建
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 在 localhost:8080 启动本地服务器并支持热更新
 npm run dev
 
-# build for production with minification
+# 构建
 npm run build
 
-# run unit tests
+# 单元测试
 npm run unit
 
-# run e2e tests
+# e2e测试
 npm run e2e
 
-# run all tests
+# 进行所有测试
 npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 协议
+[The MIT License](http://opensource.org/licenses/MIT)
